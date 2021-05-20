@@ -1,0 +1,10 @@
+function factorial(number) {
+  let count = 1
+  for(let i = number; i > 0; i--){
+        count = count * i;
+      }
+  return count
+  
+}
+
+factorial(6);

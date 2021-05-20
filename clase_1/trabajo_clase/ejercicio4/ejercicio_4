@@ -1,0 +1,12 @@
+function negativo(num) {
+  num=-56
+  let msj = "";
+  if(num > 0){
+      msj="El numero es positivo";
+    }else{
+      msj="El numero es negativo";
+    }
+  return msj;
+}
+
+negativo()

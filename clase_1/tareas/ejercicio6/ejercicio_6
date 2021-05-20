@@ -1,0 +1,13 @@
+function sumaNumeros(count, num) {
+  count = 1;
+  num = 10;
+  let sum = 0;
+
+  while(count <= num){
+    sum += count
+    count++
+  } 
+  return sum;
+}
+
+sumaNumeros();

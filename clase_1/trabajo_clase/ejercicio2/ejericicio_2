@@ -1,0 +1,5 @@
+let a = 25;
+let b = 3;
+let c = 23;
+
+Math.max(a,b,c);
