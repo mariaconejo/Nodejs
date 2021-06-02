@@ -1,26 +1,26 @@
 let arrayNumbers = []
 
 // funcion que retorna el numero mayor
-function biggerNumber(){
-    let mayor = Math.min(...arrayNumbers)
+function biggerNumber(arrayNumbers){
+    let mayor = Math.max(...arrayNumbers)
     return mayor
 }
 
 // funcion que retorna el numero menor
-function smallerNumber(){
-    let menor = Math.max(...arrayNumbers)
+function smallerNumber(arrayNumbers){
+    let menor = Math.min(...arrayNumbers)
     return menor
 }
 
 // funcion que me retorna la suma de los 20 numeros
-function sumNumbers(){
+function sumNumbers(arrayNumbers){
     let total = arrayNumbers.reduce((a, b) => a + b, 0);
     return total
 }
 
 // funcion que me retorna los numeros ordenados de menor a mayor
 
-function orderNumbers(){
+function orderNumbers(arrayNumbers){
     let order = arrayNumbers.sort(function(a,b) {
         return a-b
     })
@@ -32,7 +32,7 @@ function orderNumbers(){
 exports.resultsArray = function(num){
     let msj = ""
     num.forEach(index =>{
-        if(index <= 21){
+        if(index <= 20){
             arrayNumbers.push(Number(index))
         }
     });
