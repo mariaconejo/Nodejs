@@ -1,9 +1,10 @@
-function sumaNumeros(num) {
-  let resultado = num*(num+1)/2;
-
-  console.log("El resultado es "+ resultado);  
-
-  return resultado;
+function factorial(number) {
+  let count = 1
+  for(let i = number; i > 0; i--){
+        count = count * i;
+      }
+  return count
+  
 }
 
-sumaNumeros(13);
+factorial(6);
