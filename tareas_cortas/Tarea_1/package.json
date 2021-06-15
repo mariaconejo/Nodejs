@@ -1,0 +1,12 @@
+{
+  "name": "node-tarea",
+  "version": "1.0.0",
+  "description": "Primera tarea corta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jeampaul Salazar, Maria Jose Conejo",
+  "license": "ISC"
+}
