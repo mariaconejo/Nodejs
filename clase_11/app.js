@@ -1,6 +1,9 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const userRoute = require('./routes/user.route')
+const favoriteRoute = require('./routes/favorite.route')
+const recentRoute = require('./routes/recent.route')
+const personalRoute = require('./routes/personal.route')
 const app  = express()
 require('dotenv').config()
 
@@ -18,11 +21,18 @@ app.use(express.urlencoded({
     extended:true,
 }))
 
+
 app.use('/', userRoute)
+app.use('/', favoriteRoute)
+app.use('/', recentRoute)
+app.use('/', personalRoute)
 app.use('*', (req,res)=>{
     res.status(404)
     res.send('Path cannot found')
 })
+
+
+
 
 
 app.listen(PORT, HOSTNAME, ()=>{
